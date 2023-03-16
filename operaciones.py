@@ -1,14 +1,15 @@
 from usuarios import *
 from tkinter import *
-import tkinter as Tk
+import tkinter as tk
 from tkinter import messagebox
 
 class Operaciones():
     def __init__(self,saldo):
         self.saldo=saldo
         
+        
     def depositos(self):
-        ventanaoperaciones=Tk()
+        ventanaoperaciones= tk.Tk()
         
         labeldepositos=Tk.Label(ventanaoperaciones,text="Importe a depositar")
         labeldepositos.pack()
@@ -21,7 +22,7 @@ class Operaciones():
         messagebox.showinfo("Nuevo Saldo","Deposito realizado con éxito. Su nuevo saldo es:"+saldo)
         
     def retiros(self):
-        ventanaoperaciones=Tk()
+        ventanaoperaciones=tk.Tk()
         
         labelretiros=Tk.Label(ventanaoperaciones,text="Importe a retirar")
         labelretiros.pack()
